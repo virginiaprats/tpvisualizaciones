@@ -166,7 +166,7 @@ header nav li a{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("../tpvisualizaciones/img/img-htal-1.jpeg");
+    background-image: url("../img/img-htal-1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,7 +176,7 @@ header nav li a{
 .grid :nth-child(2){
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url("img/img-htal-2.png");
+    background-image: url("../img/img-htal-2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -186,7 +186,7 @@ header nav li a{
 .grid :nth-child(3){
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url("img/img-htal-3.jpeg");
+    background-image: url("../img/img-htal-3.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -198,7 +198,7 @@ header nav li a{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("img/img-htal-4.png");
+    background-image: url("../img/img-htal-4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

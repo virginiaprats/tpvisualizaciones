@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0aa6304a5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/registrarse.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo">     
+        <nav>
+            <ul>
+                <li><a href="" target="_blank">INFORMACIÓN ÚTIL</a></li>
+                <li><a href="" target="_blank">CENTROS MÉDICOS</a></li>
+                <li><a href="" target="_blank">PREVENCIÓN</a></li>
+            </ul>
+            <ul>
+                <li><a class="btn-accion" href="login.html" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form class="formulario">
+            <h1>Registro</h1>
+            
+            <div class="contenedor">
+
+                <div class="input-contenedor">
+                    <input type="text" placeholder="Nombre">
+                </div>
+
+                <div class="input-contenedor">
+                    <input type="text" placeholder="Apellido">
+                </div>
+
+                <div class="agrupador">
+                    <div class="input-contenedor">
+                        <select name="tipo" class="select hijo">
+                            <option value="dni">DNI</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="lc">Libreta Cívica</option>
+                            <option value="le">Libreta de Enrolamiento</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-contenedor">
+                        <input type="text" placeholder="Número de documento" class="hijo2">
+                    </div>
+
+                </div>
+               
+                
+                <div class="input-contenedor">
+                    <select name="genero" class="select">
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="ninguno">No me identifico con ninguno</option>
+                    </select>
+                </div>
+
+                <div class="input-contenedor">
+                   <input type="date" name="fecha" value="2022-11-19" min="1901-01-01" max="2022-11-19">
+                </div>
+
+                <div class="agrupador">
+                <div class="input-contenedor">
+                    <input type="email" placeholder="Email" class="hijo">
+                </div>
+
+                <div class="input-contenedor">
+                    <input type="text" placeholder="Teléfono o Celular" class="hijo3">
+                </div>
+            </div>
+
+                <div class="input-contenedor">
+                    <input type="email" placeholder="Repetir Email">
+                </div>
+
+                <div class="input-contenedor">
+                    <input type="password" placeholder="Contraseña">
+                </div>
+
+                <input type="submit" value="Registrarse" class="boton">
+
+            </div>
+
+
+        </form>
+    </main>
+</body>
+</html>
