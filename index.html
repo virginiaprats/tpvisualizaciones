@@ -9,60 +9,61 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0aa6304a5a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <img src="../img/logo.png" alt="Logo">     
-        <nav class="menu-desktop">
-            <ul>
-                <li><a href="" target="_blank">INFORMACIÓN ÚTIL</a></li>
-                <li><a href="" target="_blank">CENTROS MÉDICOS</a></li>
-                <li><a href="" target="_blank">PREVENCIÓN</a></li>
-            </ul>
-            <ul>
-                <li><a class="btn-accion" href="registrarse.html" target="_blank">Registrarse</a></li>
-                <li><a class="btn-accion" href="login.html" target="_blank">Login</a></li>
-            </ul>
-        </nav>
-        <nav class="menu-mobile" id="menu_mobile">
-            <button class="btn-menu-mobile">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <button class="btn-cerrar-menu">
-                <i class="fa-solid fa-x"></i>
-            </button>
-            <ul class="menu-mobile_list">
-                <li><a href="" target="_blank">INFORMACIÓN ÚTIL</a></li>
-                <li><a href="" target="_blank">CENTROS MÉDICOS</a></li>
-                <li><a href="" target="_blank">PREVENCIÓN</a></li>  
-                <li><a class="btn-accion" href="registrarse.html" target="_blank">Registrarse</a></li>
-                <li><a class="btn-accion" href="login.html" target="_blank">Login</a></li>
-            </ul>
-        </nav>
+
+        <div class="w3-top w3-cyan">
+            <div class="w3-bar w3-large">
+                <a class="w3-left-align w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-text-white w3-hover-white w3-large w3-cyan" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-text-white w3-third w3-hover-cyan"><img src="../tpvisualizaciones/img/logo.png" alt="Logo" style="width: 200px; height: 107px"></a>
+                <a href="#" class="w3-padding-48 w3-bar-item w3-center w3-button w3-hide-small w3-text-white w3-padding-large w3-hover-cyan">INFORMACIÓN ÚTIL</a>
+                <a href="#" class="w3-padding-48 w3-bar-item w3-button w3-hide-small w3-padding-large w3-text-white w3-hover-cyan">CENTROS MÉDICOS</a>
+                <a href="#" class="w3-padding-48 w3-bar-item w3-button w3-hide-small w3-padding-large w3-text-white w3-hover-cyan">PREVENCIÓN</a>
+                <div class="w3-display-right">
+                    <a href="registrarse.html" class="w3-button w3-margin w3-hover-deep-purple w3-indigo w3-right w3-hide-small w3-text-white w3-round-xxlarge">Registrarse</a>
+                    <a href="login.html" class="w3-button w3-margin w3-hover-deep-purple w3-indigo w3-right w3-hide-small w3-text-white w3-round-xxlarge">Iniciar sesión</a>
+                </div>
+            </div>
+        
+        <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-cyan w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-cyan w3-padding-large">INFORMACIÓN ÚTIL</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-cyan w3-padding-large">CENTROS MÉDICOS</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-cyan w3-padding-large">PREVENCIÓN</a>
+            <div class="w3-bar-item">
+                <a href="registrarse.html" class="w3-button w3-hover-deep-purple w3-indigo w3-text-white w3-round-xxlarge">Registrarse</a>
+                <a href="login.html" class="w3-button w3-hover-deep-purple w3-indigo w3-text-white w3-right w3-round-xxlarge">Iniciar sesión</a>
+            </div>
+        </div>
+        </div>
     </header>
 
     <section class="seccion-portada">
-        <img src="../img/portada_web.jpg" alt="Portada">
+        <img src="../tpvisualizaciones/img/portada_web.jpg" alt="Portada">
         <div class="seccion-portada_titulos">
             <h1>Hospital Posadas</h1>
             <h2>El sistema de salud público, gratuito y de calidad, se ofrecen a todos los ciudadanos que viven y transitan el municipio de La Matanza.</h2>
-            <a class="btn-accion" href="">Solicitar Turno</a>
+            <a class="btn-accion" href="nuevoturno.html">Solicitar Turno</a>
         </div>
     </section>
 
     <section class="seccion-info">
         <ul>
             <a href="http://">
-                <li><img src="../img/icono-manos.png" alt="Icono"><p>Atención al Ciudadano</p></li>
+                <li><img src="../tpvisualizaciones/img/icono-manos.png" alt="Icono"><p>Atención al Ciudadano</p></li>
             </a>
             <a href="http://">
-                <li><img src="../img/icono-htal.png" alt="Icono"><p>Emergencias</p></li>
+                <li><img src="../tpvisualizaciones/img/icono-htal.png" alt="Icono"><p>Emergencias</p></li>
             </a>
             <a href="http://">
-                <li><img src="../img/icono-salud.png" alt="Icono"><p>Orientación Médica</p></li>
+                <li><img src="../tpvisualizaciones/img/icono-salud.png" alt="Icono"><p>Orientación Médica</p></li>
             </a>
             <a href="http://">
-                <li><img src="../img/icono-jeringa.png" alt="Icono"><p>Campaña de Vacunación</p></li>
+                <li><img src="../tpvisualizaciones/img/icono-jeringa.png" alt="Icono"><p>Campaña de Vacunación</p></li>
             </a>
         </ul>
     </section>
@@ -72,14 +73,14 @@
         <div class="seccion-novedades_container">
             <a href="">
                 <div>
-                    <img src="../img/noticia1.jpeg" alt="Noticia 1">
+                    <img src="../tpvisualizaciones/img/noticia1.jpeg" alt="Noticia 1">
                     <h3>E-Diagnóstico</h3>
                     <p>Si tenés síntomas compatibles con COVID-19 abrimos un canal de consulta electrónica, para que no te muevas de tu casa y de esta manera evitamos entre todos su propagación.</p>
                 </div>
             </a>
             <a href="">
                 <div>
-                    <img src="../img/noticia2.jpeg" alt="Noticia 2">
+                    <img src="../tpvisualizaciones/img/noticia2.jpeg" alt="Noticia 2">
 
                     <h3>Vacunación contra sarampión, rubéola, paperas y polio</h3>
                     <p>Es obligatoria y gratuita para niños/as de 13 meses a 4 años. Acercate al vacunatorio más cercano sin turno, solo con libreta sanitaria y DNI.</p>
@@ -87,7 +88,7 @@
             </a>
             <a href="">
                 <div>
-                    <img src="../img/medicamentos.jpeg" alt="Noticia 3">
+                    <img src="../tpvisualizaciones/img/medicamentos.jpeg" alt="Noticia 3">
                     <h3>Recetas de medicamentos</h3>
                     <p>Podés acceder a la compra de medicamentos con descuento social en las farmacias de cada hospital, llevando la orden enviada por tu médico por cualquier medio online (mail, whatsapp, etc)</p>
                 </div>
@@ -108,23 +109,54 @@
     </section>
 
     <footer>
-        <img src="../img/logo_primerolagente.svg" alt="Logo primero la gente">
-   
-        <div class="footer-links-utiles">
-            <a href=""><p> Turnos </p></a>
-            <a href=""><p> Trámites a distancia </p></a>
-            <a href=""><p> Atención a la ciudadanía </p></a>
-        </div>
-        <div class="footer-links-redes">
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
+        <div class="w3-row-padding w3-padding-small w3-center w3-bottom w3-cyan">
+            
+            <div class="w3-third w3-hide-small">
+                <img src="../tpvisualizaciones/img/logo_primerolagente.svg" style="width: 50%;" alt="Logo primero la gente">
+            </div>
+            <div class="w3-third w3-hide-small">
+                <div class="w3-text-white">
+                    <p><a href="#"> Turnos </a></p>
+                    <p><a href="#"> Trámites a distancia </a></p>
+                    <p> <a href="#">Atención a la ciudadanía </a></p>
+                </div>
+            </div>
+            <div class="w3-third w3-hide-small">
+                <div class="w3-text-white">
+                    <a href="#"><p><i class="fa-brands fa-twitter"></i></p></a>
+                    <a href="#"><p><i class="fa-brands fa-facebook"></i></p></a>
+                    <a href="#"><p><i class="fa-brands fa-instagram"></i></p></a>
+                    <a href="#"><p><i class="fa-brands fa-youtube"></i></p></a>
+                </div>
+            </div>
+            <div class="w3-hide-large w3-hide-medium">
+                <div class="w3-half w3-text-white">
+                    <p><a href="#"> Turnos </a></p>
+                    <p><a href="#"> Trámites a distancia </a></p>
+                    <p> <a href="#">Atención a la ciudadanía </a></p>
+                </div>
+                <div class="w3-text-white">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div> 
     </footer>
     
 
-    <script src="/js/menu.js"></script>
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
