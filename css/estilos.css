@@ -30,6 +30,11 @@ header nav li a{
     font-weight: 500;
 }
 
+.nav-footer{
+    background-color: #00a4bd;
+}
+
+
 .btn-accion{
     padding: .7rem 1rem;
     background-color: #14417b;
@@ -166,7 +171,7 @@ header nav li a{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("../tpvisualizaciones/img/img-htal-1.jpeg");
+    background-image: url("../../tpvisualizaciones/img/img-htal-1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,7 +181,7 @@ header nav li a{
 .grid :nth-child(2){
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url("img/img-htal-2.png");
+    background-image: url("../../tpvisualizaciones/img/img-htal-2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -186,7 +191,7 @@ header nav li a{
 .grid :nth-child(3){
     grid-column-start: 2;
     grid-column-end: 3;
-    background-image: url("img/img-htal-3.jpeg");
+    background-image: url("../../tpvisualizaciones/img/img-htal-3.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -198,10 +203,151 @@ header nav li a{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("img/img-htal-4.png");
+    background-image: url("../../tpvisualizaciones/img/img-htal-4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
 }
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    background-color: #00a4bd;
+    color: #fff;
+    align-items: center;
+    padding: .8rem 0;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: .8;
+}
+footer img{
+    width: 15%;
+}
+.footer-links-utiles p{
+    margin-bottom: .5rem;
+}
+.footer-links-redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-mobile{
+    display: none;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+@media(max-width: 1000px){
+    /* MENU MOBILE */
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-mobile{
+        display: block;
+        width: auto;
+        padding: 0 0.5rem;
 
+    }
+    .btn-menu-mobile{
+        display: block;
+        width: 50%;
+        color: #fff;
+    }
+    .menu-mobile_list{
+        display: none;
+        transition: all .5s linear;
+    }
+    .mostrar-menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        left: 0;
+        z-index: 10000;
+        background: #00a4bd;
+    }
+    .btn-cerrar-menu{
+        display: none;
+        width: 80%;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        color: #fff;
+    }
+    .mostrar-menu_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+    .menu-mobile_list li{
+        margin: 15px .5rem;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    /* MENU MOBILE */
+
+    /* home */
+    .seccion-portada_titulos h1{
+        font-size: 1.3rem;
+        line-height: 23px;
+    }
+    .seccion-portada_titulos h2{
+        font-size: 1rem;
+        line-height: 16px;
+    }
+    .seccion-info ul a{
+        width: 40%;
+    }
+    .seccion-info ul{
+        flex-wrap: wrap;
+    }
+    .seccion-novedades_container{
+        flex-wrap: wrap;
+        padding: 0 0.8rem;
+    }
+    .seccion-novedades_container a{
+        width: 100%;
+        margin: .5rem 0;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .grid :nth-child(1) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .grid :nth-child(2) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .grid :nth-child(3) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .grid :nth-child(4) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .grid :nth-child(1), .grid :nth-child(2), .grid :nth-child(3), .grid :nth-child(4){
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
